@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Unics Computer Coaching</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Unics Computer Coaching for admissions, course details, and any queries. We are located in Silicon Road, New City.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .contact-info {
+            background: var(--surface);
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+        .contact-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-details h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .contact-details p, .contact-details a {
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .contact-details a:hover {
+            color: var(--secondary);
+        }
+        .contact-form {
+            background: var(--surface);
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            margin-top: 4rem;
+            box-shadow: var(--shadow-md);
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="nav-brand" style="color: var(--primary);">
+                <i class="fa-solid fa-laptop-code" style="color: var(--secondary);"></i> Unics.
+            </a>
+            <div class="mobile-toggle" style="color: var(--primary);">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" style="color: var(--text-main);">Home</a></li>
+                <li><a href="about.html" class="nav-link" style="color: var(--text-main);">About Us</a></li>
+                <li><a href="courses.html" class="nav-link" style="color: var(--text-main);">Courses</a></li>
+                <li><a href="gallery.html" class="nav-link" style="color: var(--text-main);">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active" style="color: var(--text-main);">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary mobile-click-to-call" style="margin-left: 1rem; display: none;"><i class="fa-solid fa-phone" style="margin-right:8px;"></i> Call Us</a></li>
+                <li><a href="contact.html" class="btn btn-primary join-btn" style="margin-left: 1rem;">Join Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="py-20 text-center" style="background: var(--bg-color); margin-top: 80px;">
+        <div class="container">
+            <h1 class="section-title reveal">Get In <span class="text-gradient">Touch</span></h1>
+            <p class="section-subtitle reveal">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>123 Tech Park Avenue, Silicon Road<br>New City 40001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h3>Phone Number</h3>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                            <a href="tel:+919876543211">+91 98765 43211</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <a href="mailto:info@unicscomputer.com">info@unicscomputer.com</a>
+                            <a href="mailto:support@unicscomputer.com">support@unicscomputer.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" style="margin-top: 3rem;">
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <div class="social-links mt-4">
+                                <a href="#" class="social-link" style="color: var(--primary); background: rgba(0,0,0,0.05);"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" style="color: var(--primary); background: rgba(0,0,0,0.05);"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-link" style="color: var(--primary); background: rgba(0,0,0,0.05);"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form reveal">
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Send a Message</h2>
+                    <form action="#" method="POST" class="contact-form-js" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Student Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number (10 digits)">
+                        </div>
+                        <div class="form-group">
+                            <select name="course" class="form-control">
+                                <option value="" disabled selected>Course Interested</option>
+                                <option value="Web Design & Development">Web Design & Development</option>
+                                <option value="Tally Prime with GST">Tally Prime with GST</option>
+                                <option value="DCA & MS Office">DCA & MS Office</option>
+                                <option value="Python Programming">Python Programming</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="standard" class="form-control" placeholder="Class/Standard (e.g., 10th, 12th, Graduate)">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enquire via WhatsApp <i class="fa-brands fa-whatsapp" style="margin-left: 8px;"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container reveal">
+                <!-- Using a placeholder embed for layout -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115422.37877283401!2d-122.09675239999999!3d37.369796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1714035624796!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container text-center">
+            <p>&copy; 2026 Unics Computer Coaching. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <button class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/919876543210" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Adjust navbar for mobile
+        if(window.innerWidth <= 768) {
+            document.querySelector('.join-btn').style.display = 'none';
+            document.querySelector('.mobile-click-to-call').style.display = 'inline-flex';
+            document.querySelector('.mobile-click-to-call').href = 'tel:+919876543210';
+        }
+    </script>
+</body>
+</html>
